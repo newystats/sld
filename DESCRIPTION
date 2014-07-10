@@ -1,0 +1,11 @@
+Package: sld
+Version: 0.1
+Date: 2014/07/10
+Title: Estimation and use of the quantile based Skew Logistic distribution
+Depends: stats
+Suggests: graphics, lmom, e1071
+Author: Robert King <Robert.King@newcastle.edu.au>
+Maintainer: Robert King <Robert.King@newcastle.edu.au>
+Description: The quantile-based skew logistic distribution is a quanitle defined generalisation of the logstic distribution.  This package provides random numbers, quantiles, probabilities, densities for the distribution.  It provides the density function, distribution function and Quantile-Quantile plots.  It provides methods of L-Moments estimation for the distribution.
+License: GPL (>= 2)
+URL: http://tolstoy.newcastle.edu.au/~rking/SLD/
