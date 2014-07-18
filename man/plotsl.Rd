@@ -1,9 +1,8 @@
-WRONG
 \name{plotgl}
 \alias{plotgl}
 \alias{plotglc}
 \alias{plotgld}
-\title{Plots of density and distribution function for the generalised lambda
+\title{WRONG Plots of density and distribution function for the generalised lambda
 distribution}
 \description{
 Produces plots of density and distribution function for the generalised lambda

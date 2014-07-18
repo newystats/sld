@@ -27,7 +27,7 @@ result[!outside.range] <- quants
 result
 }
 
-dqgl <- function(p,parameters){
+dqsl <- function(p,parameters){
   # This is the density quantile function of the skew logistic distribution
   # Check the parameter values are OK
   if(!sl.check.pars(parameters)) {
@@ -39,61 +39,28 @@ dqgl <- function(p,parameters){
   delta <- parameters[3]
   # Do something sensible with stupid ps  
   outside.range <- !as.logical((p<=1)*(p>=0))
+  # prepare the vector result
+  result <- p*0
   # u gets only the probabilities in [0,1]
-  dens <- p*0
-### Fix this with somtehign like the qsl function
   u <- p[!outside.range]	
-dens <-  lambdas[2]/(lambdas[3] * (p^(lambdas[3] -1)) + lambdas[4] * ((1 - p)^(lambdas[4] -1)))
-dens
-}
-
-.dqgl.fmkl <- function(p,lambdas)
-{
-# Check the values are OK)
-if(!gl.check.lambda(lambdas,param="fkml",vect=TRUE)) {
-        stop(paste("The parameter values", paste(lambdas,collapse=" "),
-"\ndo not produce a proper distribution with the FMKL",
-"parameterisation - see \ndocumentation for gl.check.lambda"))
-	}
-outside.range <- !as.logical((p<=1)*(p>=0))
-# u gets only the probabilities in [0,1]
-u <- p[!outside.range]
-# The density is given by 1/Q'(u)
-dens <- lambdas[2]/(p^(lambdas[3] - 1) + (1 - p)^(lambdas[4] - 1))
-dens
-}
-
-.dqgl.fm5 <- function(p,lambdas)
-{
-# Check the values are OK)
-if(!gl.check.lambda(lambdas,param="fm5",vect=TRUE)) {
-        stop(paste("The parameter values", paste(lambdas,collapse=" "),
-"\ndo not produce a proper distribution with the FM5",
-"parameterisation - see \ndocumentation for gl.check.lambda"))
-	}
-outside.range <- !as.logical((p<=1)*(p>=0))
-# u gets only the probabilities in [0,1]
-u <- p[!outside.range]
-# The density is given by 1/Q'(u)
-dens <- lambdas[2]/((1-lambdas[5])*(u^(lambdas[3] - 1)) + (1+lambdas[5])*((1 - u)^(lambdas[4] - 1)) )
-dens
-}
-
-.dqgl.vsk <- function(p,lambdas)
-{
-	# lambdas is a parameter containing (alpha,beta,lambda,delta)
-	alpha <- lambdas[1]
-	p.beta <- lambdas[2]
-	delta <- lambdas[3]
-	lambda <- lambdas[4]
-  outside.range <- !as.logical((p <= 1) * (p >= 0))
-	u <- p[!outside.range]
-	if (lambda == 0){
-		dens <- u*(1-u)/(p.beta* (delta*u + (1-delta)*(1-u)))
-	} else {
-		dens <- 1/(p.beta * ( (1-delta)*(u^(lambda -1)) + delta*( (1-u)^(lambda -1))) )
-	}
-	result <- p * 0
-	result[!outside.range] <- dens
-	result
+  # special cases of delta = 0,1 need to do something special at one of the endpoints
+  if (delta == 0){ # reflected exponential
+    inf.pt <- as.logical(p==1)
+    u <- p[!(outside.range|inf.pt)]
+    dens <- u*(1-u)/(p.beta* (delta*u + (1-delta)*(1-u)))
+    result[inf.pt] <- Inf
+    result[!(outside.range|inf.pt)] <- dens
+  } else {
+    if (delta ==1){ #exponential
+      inf.pt <- as.logical(p==0)
+      u <- p[!(outside.range|inf.pt)]
+      dens <- u*(1-u)/(p.beta* (delta*u + (1-delta)*(1-u)))
+      result[inf.pt] <- Inf
+      result[!(outside.range|inf.pt)] <- dens
+    } else { #skew logistic
+      dens <- u*(1-u)/(p.beta* (delta*u + (1-delta)*(1-u)))
+      result[!outside.range] <- dens
+    } 
+  }
+result  
 }
