@@ -1,5 +1,5 @@
 plotsld <- function(parameters, add=FALSE, granularity = 10000,
-  xlab = "x", ylab=NULL, quant.probs = seq(0,1,.25), ...)
+  xlab = "x", ylab="density", quant.probs = seq(0,1,.25), ...)
 {
 # standard parameter fixin - copied directly from qsl, but we want the 
 # warnings to happen in this function.
