@@ -58,7 +58,7 @@ additional function, \code{dqgl}, computes this.
   \code{dqsl} gives the density quantile,
   
   \code{psl} gives the distribution function (based on a numerical
-	solution to Q(u)=x and the \code{\link{dqsl}}
+	solution to Q(u)=x and \code{\link{dqsl}}
 
   \code{qsl} gives the quantile function, and
 

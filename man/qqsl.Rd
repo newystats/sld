@@ -34,7 +34,7 @@ distributions.
 \value{
   A list of the same form as that returned by \code{\link{qqline}}
   \item{x}{The x coordinates of the points that were/would be plotted,
-corresponding to a skew distibution with parameters 
+corresponding to a skew logistic distibution with parameters 
 \eqn{\alpha}{alpha}, \eqn{\beta}{beta} and \eqn{\delta}{delta}.}
   \item{y}{The original \code{y} vector, i.e., the corresponding y
     coordinates, or a corresponding set of quantiles from a skew logistic

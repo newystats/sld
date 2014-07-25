@@ -1,3 +1,4 @@
-export(dsl,dqsl,psl,plotslc,plotsld,dqsl,qsl,qqsl,rsl)
-import(graphics,stats)
+export(dsl,dqsl,psl,plotslc,plotsld,dqsl,qsl,qqsl,rsl,lmom.sample,
+       fit.sld.lmom.given,fit.sld.lmom)
+import(graphics,stats,lmom)
 useDynLib(sld,sld_distfunc)
