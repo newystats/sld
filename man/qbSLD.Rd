@@ -39,17 +39,24 @@ rsl(n,parameters)
   The quantile-based skew logistic distribution is a generalisation of the 
   logistic distribution, defined by its quantile funtion, (Q(u)), the inverse 
   of the distribution function.
-\deqn{Q(u)= \alpha + \beta ( (1- \delta) log (u)  - \delta (log (1-u)) )}
-{Q(u) = alpha + beta ( (1 - delta)*(log(u)) - delta * (log(1-u)) ) }
+\deqn{Q(u)= \alpha + \beta \left[ (1- \delta) \log (u)  - \delta (\log (1-u)) \right] )}{Q(u) = alpha + beta ( (1 - delta)*(log(u)) - delta * (log(1-u)) ) }
 for \eqn{\beta > 0}{beta >0} and \eqn{0 \leq \delta \leq 1}{0 <= delta <= 1}.
-
 
 The distribution is defined by its quantile function and its distribution and
 density functions do not exist in closed form (except for some special cases).
 Accordingly, the results from \code{psl} and \code{dsl} are the result of
 numerical solutions to the quantile function, using the Newton-Raphson method.
-Since the density quantile function, \eqn{f(F^{-1}(u))}, does exist, an 
+Since the density quantile function, \eqn{f(Q(u))}, does exist, an 
 additional function, \code{dqgl}, computes this.
+
+  The distribution has closed form method of L-Moment estimates 
+(see \code{\link{fit.sld.lmom}} for details).  The 4th L-Moment ratio of the
+the distribution is constant \eqn{\tau_4 = \frac{1}{6}}{tau4 = 1/6} for 
+all values of \eqn{\delta}{delta}.  
+The 3rd L-Moment ratio of the distribution is restricted to
+\eqn{\frac{-1}{3} \leq \tau_3 \leq \frac{1}{3}}{-1/3 <= tau3 <= 1/3}, being 
+the the 3rd L-moment ratio values of the reflected exponential and 
+the exponential distributions respectively.
 }
 \value{
   \code{dsl} gives the density (based on the quantile density and a 

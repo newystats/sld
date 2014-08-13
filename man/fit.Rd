@@ -26,9 +26,9 @@ fit.sld.lmom(data)
   Note that L3 in the \eqn{\hat\alpha}{alpha} estimate is the 3rd L-Moment, not the 3rd L-Moment 
   ratio (\eqn{\tau_3 = L3/L2}{tau3 = L3/L2}).
   
-  \code{fit.sld.lmom} uses the \code{\link[lmom]{samlmu}} function to
-  calculate the sample L moments, then \code{fit.sld.lmom.given} to calculate
-  the estimates.
+  \code{fit.sld.lmom} uses the \code{\link[lmom]{samlmu}} function (from 
+  the \code{lmom} package) to calculate the sample L moments, then 
+  \code{fit.sld.lmom.given} to calculate the estimates.
 }
 \value{
   A vector of length 3, with the estimated parameters, 
