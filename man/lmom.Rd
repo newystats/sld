@@ -20,11 +20,9 @@ It calculates sample L Moments.
   the corresponding L moment ratios (the L Moment divided by the 2nd L Moment).
 }
 \references{
-van Staden, P.J. and King, R.A.R. (2014) The quantile-based skew logistic distribution. \emph{Under Review}
+Hosking, J. R. M. (1990). \emph{L-moments: analysis and estimation of distributions using linear combinations of order statistics.} Journal of the Royal Statistical Society, Series B, \bold{52}, 105--124.
 
-van Staden, Paul J. 2013 \emph{Modeling of generalized families of probability distribution in the quantile statistical universe}. 
-PhD thesis, University of Pretoria.
-\url{http://hdl.handle.net/2263/40265}
+Hosking, J. R. M., and Wallis, J. R. (1997). \emph{Regional frequency analysis: an approach based on L-moments.} Cambridge University Press.
 
 \url{http://tolstoy.newcastle.edu.au/rking/SLD/SLD.html}
 }

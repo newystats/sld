@@ -50,7 +50,8 @@ plotslc(parameters, add=FALSE, granularity = 10000,
 maximum and quartiles.
 }
 \references{
-van Staden, P.J. and King, R.A.R. (2014) The quantile-based skew logistic distribution. \emph{Under Review}
+van Staden, P.J. and King, Robert A.R. (2015) \emph{The quantile-based skew logistic distribution}, Statistics and Probability Letters \bold{96},
+109--116
 
 van Staden, Paul J. 2013 \emph{Modeling of generalized families of probability distribution in the quantile statistical universe}. 
 PhD thesis, University of Pretoria.
