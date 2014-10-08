@@ -65,6 +65,10 @@ PhD thesis, University of Pretoria.
 generated.data <- rsl(300,c(0,1,.4))
 estimate1 <- fit.sld.lmom(generated.data)
 estimate2 <- fit.sld.lmom.given(c(0,1,.3),n=300)
+data(PCB)
+hist(PCB,prob=TRUE)
+fit.pcb <- fit.sld.lmom(PCB)
+plotsld(fit.pcb,add=TRUE,col="blue")
 }
 \keyword{estimation}
 
