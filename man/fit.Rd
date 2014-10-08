@@ -66,9 +66,10 @@ generated.data <- rsl(300,c(0,1,.4))
 estimate1 <- fit.sld.lmom(generated.data)
 estimate2 <- fit.sld.lmom.given(c(0,1,.3),n=300)
 data(PCB)
-hist(PCB,prob=TRUE)
+hist(PCB,prob=TRUE,main="PCB in Pelican Egg Yolk with SLD fit")
 fit.pcb <- fit.sld.lmom(PCB)
-plotsld(fit.pcb,add=TRUE,col="blue")
+print(fit.pcb)
+plotsld(fit.pcb[,1],add=TRUE,col="blue")
 }
 \keyword{estimation}
 
