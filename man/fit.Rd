@@ -50,6 +50,7 @@ which form the limiting cases of the skew logistic distribution.
 }
 \references{
 van Staden, P.J. and King, Robert A.R. (2015) \emph{The quantile-based skew logistic distribution}, Statistics and Probability Letters \bold{96} 109--116.
+\url{http://dx.doi.org/10.1016/j.spl.2014.09.001}
 
 van Staden, Paul J. 2013 \emph{Modeling of generalized families of probability distribution in the quantile statistical universe}. 
 PhD thesis, University of Pretoria.
@@ -65,9 +66,9 @@ PhD thesis, University of Pretoria.
 generated.data <- rsl(300,c(0,1,.4))
 estimate1 <- fit.sld.lmom(generated.data)
 estimate2 <- fit.sld.lmom.given(c(0,1,.3),n=300)
-data(PCB)
-hist(PCB,prob=TRUE,main="PCB in Pelican Egg Yolk with SLD fit")
-fit.pcb <- fit.sld.lmom(PCB)
+data(PCB1)
+hist(PCB1,prob=TRUE,main="PCB in Pelican Egg Yolk with SLD fit")
+fit.pcb <- fit.sld.lmom(PCB1)
 print(fit.pcb)
 plotsld(fit.pcb[,1],add=TRUE,col="blue")
 }

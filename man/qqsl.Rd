@@ -20,9 +20,12 @@ qqsl(y=NULL,parameters1,parameters2=NULL,abline=TRUE,
   \item{parameters2}{Second set of parameters of the skew logistic distribution. A vector of length 3, as described above for \code{parameters1}.}
   \item{abline}{A logical value, TRUE adds a line through the origian
 with a slope of 1 to the plot}
-  \item{granularity.for.2.dists}{Number of quantiles to use in a Q-Q plot comparing 
-  two sets of parameter values}
-  \item{use.endpoints}{logical. When comparing two sets of parameter values, how many quantiles should be used.}
+  \item{granularity.for.2.dists}{Number of quantiles to use in a Q-Q plot comparing two sets of parameter values}
+  \item{use.endpoints}{logical. When comparing two sets of parameter values, should Q(0) and Q(1) be used?  TRUE will give QQ plots including the theoretical
+  minimum and maximum of the distribution, which is arguably not equivalent to
+  what would be seen in QQ plots based on data.  FALSE will give QQ plots based on 
+  ideal depths (type 8 quantiles, see \code{\link[stats]{quantile}} 
+  documentation), where \code{n} is the \code{granularity.for.2.dists}.}
   \item{\dots}{graphical parameters, passed to \code{\link{qqplot}}}
 }
 \details{
@@ -42,6 +45,7 @@ distribution with the second set of parameters}
 }
 \references{
 van Staden, P.J. and King, R.A.R. (2015) \emph{The quantile-based skew logistic distribution}, Statistics and Probability Letters \bold{96} 109--116.
+\url{http://dx.doi.org/10.1016/j.spl.2014.09.001}
 
 van Staden, Paul J. 2013 \emph{Modeling of generalized families of probability distribution in the quantile statistical universe}. 
 PhD thesis, University of Pretoria.

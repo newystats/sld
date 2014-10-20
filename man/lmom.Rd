@@ -24,6 +24,9 @@ Hosking, J. R. M. (1990). \emph{L-moments: analysis and estimation of distributi
 
 Hosking, J. R. M., and Wallis, J. R. (1997). \emph{Regional frequency analysis: an approach based on L-moments.} Cambridge University Press.
 
+J. R. M. Hosking (2014). L-moments. R package, version 2.2.
+  \url{http://CRAN.R-project.org/package=lmom}
+  
 \url{http://tolstoy.newcastle.edu.au/rking/SLD/SLD.html}
 }
 \author{Robert King, \email{robert.king@newcastle.edu.au},
@@ -33,5 +36,8 @@ Hosking, J. R. M., and Wallis, J. R. (1997). \emph{Regional frequency analysis: 
 \examples{
 generated.data <- rsl(300,c(0,1,.4))
 lmom.sample(data=generated.data,max.mom=3)
+
+data(PCB1)
+lmom.sample(PCB1,max.mom=3)
 }
 \keyword{estimation}

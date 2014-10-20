@@ -5,7 +5,7 @@
 \title{Plots of density and distribution function for the quantile based skew logistic distribution}
 \description{
 Produces plots of density and distribution function for the  quantile based skew 
-logistic distribution.  Although you could use \code{plot(function(x)dsl(x))} 
+logistic distribution.  Although you could use \code{curve(dsl(x))} 
 to do this, the fact that the density and quantiles of this distribution are
 defined in terms of the depth, \eqn{u}, means that a seperate function that
 uses the depths to produce the values to plot is more accurate and efficient.
@@ -51,7 +51,7 @@ maximum and quartiles.
 }
 \references{
 van Staden, P.J. and King, Robert A.R. (2015) \emph{The quantile-based skew logistic distribution}, Statistics and Probability Letters \bold{96},
-109--116
+109--116. \url{http://dx.doi.org/10.1016/j.spl.2014.09.001}
 
 van Staden, Paul J. 2013 \emph{Modeling of generalized families of probability distribution in the quantile statistical universe}. 
 PhD thesis, University of Pretoria.

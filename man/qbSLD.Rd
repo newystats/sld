@@ -37,17 +37,23 @@ rsl(n,parameters)
 }
 \details{
   The quantile-based skew logistic distribution is a generalisation of the 
-  logistic distribution, defined by its quantile funtion, (Q(u)), the inverse 
+  logistic distribution, defined by its quantile funtion, Q(u), the inverse 
   of the distribution function.
 \deqn{Q(u)= \alpha + \beta \left[ (1- \delta) \log (u)  - \delta (\log (1-u)) \right] )}{Q(u) = alpha + beta ( (1 - delta)*(log(u)) - delta * (log(1-u)) ) }
 for \eqn{\beta > 0}{beta >0} and \eqn{0 \leq \delta \leq 1}{0 <= delta <= 1}.
 
+  The distribution was first used by Gilchrist (2000) in the book 
+\emph{Statistical Modelling with Quantile Functions}.  Full details of 
+the properties of the distributions, including
+moments, L-moments and estimation via L-Moments are given in 
+van Staden and King (2015).
+  
 The distribution is defined by its quantile function and its distribution and
 density functions do not exist in closed form (except for some special cases).
 Accordingly, the results from \code{psl} and \code{dsl} are the result of
 numerical solutions to the quantile function, using the Newton-Raphson method.
 Since the density quantile function, \eqn{f(Q(u))}, does exist, an 
-additional function, \code{dqgl}, computes this.
+additional function, \code{dqsl}, computes this.
 
   The distribution has closed form method of L-Moment estimates 
 (see \code{\link{fit.sld.lmom}} for details).  The 4th L-Moment ratio of the
@@ -72,7 +78,12 @@ the exponential distributions respectively.
   \code{rsl} generates random deviates.
 }
 \references{
+Gilchrist, W.G. (2000)
+\emph{Statistical Modelling with Quantile Functions}
+Chapman \& Hall, print 978-1-58488-174-2, e-book 978-1-4200-3591-9.
+
 van Staden, P.J. and King, Robert A.R. (2015) \emph{The quantile-based skew logistic distribution}, Statistics and Probability Letters \bold{96} 109--116.
+\url{http://dx.doi.org/10.1016/j.spl.2014.09.001}
 
 van Staden, Paul J. 2013 \emph{Modeling of generalized families of probability distribution in the quantile statistical universe}. 
 PhD thesis, University of Pretoria.
