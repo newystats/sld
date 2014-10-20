@@ -7,8 +7,8 @@ Suggests: graphics
 Author: Robert King <Robert.King@newcastle.edu.au>, Paul van Staden <paul.vanstaden@up.ac.za>
 Maintainer: Robert King <Robert.King@newcastle.edu.au>
 Description: The skew logistic distribution is a quantile-defined generalisation
- of the logistic distribution (van Staden and King 2015).  Provides random numbers, 
- quantiles, probabilities, densities and density quantiles for the distribution.
+ of the logistic distribution (van Staden and King 2015).  Provides random 
+ numbers, quantiles, probabilities, densities and density quantiles for the distribution.
  It provides Quantile-Quantile plots and method of L-Moments estimation 
  (including asymptotic standard errors) for the distribution.
 License: GPL (>= 2)
