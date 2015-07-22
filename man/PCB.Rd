@@ -21,7 +21,9 @@ occidentalis} eggs from Risebrough et al (undated).
 \format{
 The data are in one vector, named PCB.
 }
-\source{Risebrough (1972) \emph{Effects of environmental pollutants upon animals other than man}, Proceedings of the 6th Berkeley Symposium on Mathematical Statistics and Probability, Volume 6: Effects of Pollution on Health, 443--463, University of California Press, Berkeley, Calif., http://projecteuclid.org/euclid.bsmsp/1200514718 .
+\source{Risebrough (1972) \emph{Effects of environmental pollutants upon animals other than man}, Proceedings of the 6th Berkeley Symposium on Mathematical Statistics and Probability, Volume 6: Effects of Pollution on Health, 443--463, University of California Press, Berkeley, California.
+
+http://projecteuclid.org/euclid.bsmsp/1200514718
 
 R.W. Risebrough, F. Gress, J.K. Baptista, D.W. Anderson and
 R.W Schreiber (undated) \emph{Oceanic pollution: Effects on the
