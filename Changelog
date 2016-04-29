@@ -7,3 +7,9 @@ First release
 0.3
 Added Standard Errors
 References to van Staden & King (2015) in documentation updated to published version of paper
+
+0.3.1 
+Documentation tidied
+
+0.3.2 
+Changed samlmu() call to use argument names

@@ -26,6 +26,6 @@ fit.sld.lmom <- function(data){
 }
 
 lmom.sample <- function(data,max.mom=3){
-  LM <- samlmu(data,max.mom)
+  LM <- samlmu(x=data,nmom=max.mom)
   LM
 }

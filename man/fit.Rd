@@ -58,7 +58,7 @@ PhD thesis, University of Pretoria.
 
 \url{http://tolstoy.newcastle.edu.au/rking/SLD/SLD.html}
 }
-\author{Robert King, \email{robert.king@newcastle.edu.au},
+\author{Robert King, \email{robert.king@newcastle.edu.au}, 
 \url{http://tolstoy.newcastle.edu.au/~rking/} and Paul van Staden}
 
 \seealso{\code{\link{sld}}}
