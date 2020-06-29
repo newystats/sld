@@ -1,0 +1,22 @@
+#include <stdlib.h> // for NULL
+#include <R_ext/Rdynload.h>
+
+/* FIXME: 
+   Check these declarations against the C/Fortran source code.
+*/
+
+/* .C calls */
+extern void sld_funcd( double , double , double *, double *, double *, double *, double *);
+
+extern void sld_distfunc(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
+
+static const R_CMethodDef CEntries[] = {
+    {"sld_distfunc", (DL_FUNC) &sld_distfunc, 10},
+    {NULL, NULL, 0}
+};
+
+void R_init_sld(DllInfo *dll)
+{
+    R_registerRoutines(dll, CEntries, NULL, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
+}

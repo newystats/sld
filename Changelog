@@ -13,3 +13,7 @@ Documentation tidied
 
 0.3.2 
 Changed samlmu() call to use argument names
+
+0.3.3
+register C routines
+Author@R
