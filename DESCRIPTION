@@ -1,6 +1,6 @@
 Package: sld
-Version: 0.3.3
-Date: 2020-06-20
+Version: 0.3.4
+Date: 2020-06-29
 Title: Estimation and Use of the Quantile-Based Skew Logistic Distribution
 Depends: stats, lmom
 Suggests: graphics
