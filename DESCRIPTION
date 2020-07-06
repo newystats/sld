@@ -1,6 +1,6 @@
 Package: sld
 Version: 0.3.4
-Date: 2020-06-29
+Date: 2020-07-10
 Title: Estimation and Use of the Quantile-Based Skew Logistic Distribution
 Depends: stats, lmom
 Suggests: graphics
@@ -10,7 +10,8 @@ Authors@R:
       email="Robert.King@newcastle.edu.au",
       comment=c(ORCID="0000-0001-7495-6599")),
     person(given="Paul",family="van Staden",
-      role="aut")
+      role="aut",email="paul.vanstaden@up.ac.za",
+      comment=c(ORCID="0000-0002-5710-5984"))
     )
 Description: The skew logistic distribution is a quantile-defined generalisation
  of the logistic distribution (van Staden and King 2015).  Provides random 
