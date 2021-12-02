@@ -1,13 +1,13 @@
 Package: sld
-Version: 0.3.4
-Date: 2020-07-10
+Version: 1.0.0
+Date: 2021-12-02
 Title: Estimation and Use of the Quantile-Based Skew Logistic Distribution
 Depends: stats, lmom
 Suggests: graphics
 Authors@R:  
   c(person(given="Robert",family="King",
       role=c("aut","cre"),
-      email="Robert.King@newcastle.edu.au",
+      email="Robert.King.Newcastle@gmail.com",
       comment=c(ORCID="0000-0001-7495-6599")),
     person(given="Paul",family="van Staden",
       role="aut",email="paul.vanstaden@up.ac.za",
@@ -19,4 +19,4 @@ Description: The skew logistic distribution is a quantile-defined generalisation
  It provides Quantile-Quantile plots and method of L-Moments estimation 
  (including asymptotic standard errors) for the distribution.
 License: GPL (>= 2)
-URL: http://tolstoy.newcastle.edu.au/~rking/SLD/
+URL: http://git.hub/newystats/SLD/

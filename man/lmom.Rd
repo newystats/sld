@@ -26,11 +26,11 @@ Hosking, J. R. M., and Wallis, J. R. (1997). \emph{Regional frequency analysis: 
 
 J. R. M. Hosking (2014). L-moments. R package, version 2.2.
   \url{https://cran.r-project.org/package=lmom}
-  
-\url{https://tolstoy.newcastle.edu.au/rking/SLD/}
 }
-\author{Robert King, \email{robert.king@newcastle.edu.au},
-\url{https://tolstoy.newcastle.edu.au/~rking/} and Paul van Staden}
+
+\author{Robert King, \email{robert.king.newcastle@gmail.com}, 
+\url{https://github.com/newystats} and Paul van Staden}
+
 
 \seealso{\code{\link{sld}}}
 \examples{
