@@ -19,4 +19,4 @@ Description: The skew logistic distribution is a quantile-defined generalisation
  It provides Quantile-Quantile plots and method of L-Moments estimation 
  (including asymptotic standard errors) for the distribution.
 License: GPL (>= 2)
-URL: http://git.hub/newystats/SLD/
+URL: https://github.com/newystats/SLD/

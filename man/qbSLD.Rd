@@ -83,15 +83,15 @@ Gilchrist, W.G. (2000)
 Chapman & Hall, print 978-1-58488-174-2, e-book 978-1-4200-3591-9.
 
 van Staden, P.J. and King, Robert A.R. (2015) \emph{The quantile-based skew logistic distribution}, Statistics and Probability Letters \bold{96} 109--116.
-\url{http://dx.doi.org/10.1016/j.spl.2014.09.001}
+\doi{10.1016/j.spl.2014.09.001}
 
 van Staden, Paul J. 2013 \emph{Modeling of generalized families of probability distribution in the quantile statistical universe}. 
 PhD thesis, University of Pretoria.
 \url{http://hdl.handle.net/2263/40265}
 
-\url{http://tolstoy.newcastle.edu.au/rking/SLD/SLD.html}
+\url{https://github.com/newystats/sld}
 }
-\author{Robert King, \email{robert.king@newcastle.edu.au}, \url{http://tolstoy.newcastle.edu.au/~rking/}}
+\author{Robert King, \email{robert.king.newcastle@gmail.com}, \url{https://github.com/newystats/}}
 
 \examples{
 qsl(seq(0,1,0.02),c(0,1,0.123))
