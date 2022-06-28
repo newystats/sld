@@ -21,3 +21,6 @@ Author@R
 1.0.0
 Stable version
 New email and URL
+
+1.0.1
+Un-italicise Pelecanus occidentalis in help file to avoid nested emph error

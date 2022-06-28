@@ -27,7 +27,7 @@ http://projecteuclid.org/euclid.bsmsp/1200514718
 
 R.W. Risebrough, F. Gress, J.K. Baptista, D.W. Anderson and
 R.W Schreiber (undated) \emph{Oceanic pollution: Effects on the
-	reproduction of Brown Pelicans \emph{Pelecanus occidentalis}}, unpublished manuscript
+	reproduction of Brown Pelicans Pelecanus occidentalis}, unpublished manuscript
 }
 \references{Thas (2010) \emph{Comparing Distributions}, Springer. 978-0-387-92710-7
 }
