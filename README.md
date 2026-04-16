@@ -3,9 +3,9 @@ R package for the Quantile based skew logistic distribution.  This is available 
 
 The quantile-based skew logistic distribution is a skewed distribution, produced by a skewing function of Gilchrist.  It is defined by its quantile function;
 
-Q(u) = alpha + beta ( (1 - delta)*(log(u)) - delta * (log(1-u)) )
+$$Q(u) = \alpha + \beta ( (1 - \delta)*(log(u)) - \delta * (log(1-u)) )$$
 
-for beta >0 and 0 <= delta <= 1.
+for $\beta >0$ and $0 <= \delta <= 1$.
 
 The distribution was first used by Gilchrist (2000) in the book [https://www.routledge.com/Statistical-Modelling-with-Quantile-Functions/Gilchrist/p/book/9780367398682 Statistical Modelling with Quantile Functions]. 
 Full details of the properties of the distributions, including moments, L-moments and estimation via L-Moments are given in van Staden and King (2015).
